@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .header {
     display: flex;
     align-items: center;
@@ -19,7 +21,7 @@
         }
 
         .title {
-            color: #4793FF;
+            color: $primary-color;
             text-transform: uppercase;
             font-weight: 800;
             font-size: 25px;
