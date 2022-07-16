@@ -18,12 +18,16 @@ export const Header = (props: HeaderProps) => {
     const colourStyles: StylesConfig = {
         control: (styles) => ({
             ...styles,
-            backgroundColor: 'rgba(71, 147, 255, 0.2)',
+            backgroundColor: 0 ? '#4f4f4f' : 'rgba(71, 147, 255, 0.2)',
             width: '204px',
             height: '37px',
             border: 'none',
             borderRadius: '10px',
             zIndex: 100
+        }),
+        singleValue: (styles) => ({
+            ...styles,
+            color: 0 ? '#fff' : '#000'
         })
     };
 
