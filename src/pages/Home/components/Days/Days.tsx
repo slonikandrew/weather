@@ -81,7 +81,7 @@ export const Days = (props: DaysProps) => {
         <Tabs />
         <div className={s.days}>
             {
-                days.map((day: Day) => <Card day={day}/>)
+                days.map((day: Day, i: number) => <Card day={day} key={i}/>)
             }
         </div>
       </>
